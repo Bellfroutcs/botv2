@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
     pepe = 'https://i.ibb.co/BzR1jRq/08a088fe953b.jpg'
     baper = await fetch(pepe).then(a => a.buffer())
     let listMessage = {
-        "title": "◈ Made by The.sad.boy01",
+        "title": "◈ Made by Ananda DEV",
         "description": `
 ┌「 *Sewa bot* 」
 │     
@@ -17,7 +17,7 @@ let handler = async (m, { conn }) => {
 ├ Rp. 10,000 Pulsa Three
 │
 ├ tertarik? hubungi: 
-├ @62895336282144 (The.sad.boy01)
+├ @6283816797646 (Ananda DEV)
 └────
 `.trim(),
         "listType": "PRODUCT_LIST",
@@ -27,18 +27,18 @@ let handler = async (m, { conn }) => {
                     "title": "klik untuk melihat harga",
                     "products": [
                         {
-                            "productId": "4730029423700586"
+                            "productId": "5555536691198654"
                         }
                     ]
                 }
             ],
             "headerImage": {
-                "productId": "4730029423700586",
+                "productId": "5555536691198654",
                 "jpegThumbnail": baper
             },
-            "businessOwnerJid": "6288217277973@s.whatsapp.net"
+            "businessOwnerJid": "6283816797646@s.whatsapp.net"
         },
-        "footerText": "https://wa.me/c/6288217277973\n\nowner number : wa.me/62895336282144"
+        "footerText": "https://wa.me/c/6283816797646\n\nowner number : wa.me/6283816797646"
     }
     conn.sendMessage(m.chat, listMessage, 'listMessage', { quoted: m, contextInfo: { mentionedJid: conn.parseMention(listMessage.description) } })
 }
